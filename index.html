@@ -7,6 +7,49 @@
 
 <style>
 
+  .intro {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  background: #f7f9fc;
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 4px solid #0ea5e9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.option h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.option p {
+  margin-bottom: 10px;
+}
+
+.option.highlight {
+  background: #eef6ff;
+  border-left: 4px solid #2563eb;
+}
+
+.btn-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
 /* RESET */
 *{
 box-sizing:border-box;
@@ -143,21 +186,50 @@ You will find excursions, boats, private drivers or just some infos to explore b
 
 <!-- CAPRI -->
 <div class="card">
-<img src="immagini/capri.webp" alt="Capri Island">">
-<div class="card-content">
-<h2>🏝️ Capri</h2>
-<p>
-For Capri Island obviously the only way to visit is by boat, but there are multiple options:<br><br>
+  <img src="immagini/capri.webp" alt="Capri Island">
 
-Ferries: From Sorrento port there is a ferry leaving about every half an hour, the ticket costs around 22€ one way.<br><br>
+  <div class="card-content">
+    <h2>🏝️ Capri</h2>
 
-Group Tour: DA INSERIRE 
-<a href="caprigrouptour.html">👉 More details</a><br><br>
+    <p class="intro">
+      Capri is best explored by sea. Here are the different ways you can visit the island:
+    </p>
 
-Private Tour: With a private small boat (just you and the pilot), 8h tour, tour around the island, all the explanations just for you, you find prices following. Contact me to book it.
-<a href="capriprivatetour.html">👉 More details</a>
-</p>
-</div>
+    <div class="options">
+
+      <!-- OPTION 1 -->
+      <div class="option">
+        <h3>⛴️ Ferries</h3>
+        <p>
+          From Sorrento port there is a ferry approximately every
+          <strong>30 minutes</strong>.  
+          Ticket price is around <strong>€22 one way</strong>.
+        </p>
+      </div>
+
+      <!-- OPTION 2 -->
+      <div class="option">
+        <h3>👥 Group Tour</h3>
+        <p>
+          A shared boat experience to discover Capri together with other travelers.
+        </p>
+        <a class="btn-link" href="caprigrouptour.html">👉 More details</a>
+      </div>
+
+      <!-- OPTION 3 -->
+      <div class="option highlight">
+        <h3>🚤 Private Tour</h3>
+        <p>
+          Private small boat only for you and the skipper.  
+          <strong>8-hour tour</strong> around the island with explanations,
+          swimming stops and total flexibility.
+          Prices available below — contact me to book.
+        </p>
+        <a class="btn-link" href="capriprivatetour.html">👉 More details</a>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <!-- AMALFI -->
@@ -272,6 +344,7 @@ E-mail: r.mg@hotmail.it
 
 </body>
 </html>
+
 
 
 
